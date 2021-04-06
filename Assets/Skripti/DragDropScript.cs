@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DragDropScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler /*, IEndDragHandler*/ {
-    public Objekti ObjektuSkripts;
+    //public Objekti ObjektuSkripts;
     private CanvasGroup kanvasGrupa;
     private RectTransform velkObjRectTrasf;
 
@@ -35,6 +35,6 @@ public class DragDropScript : MonoBehaviour, IPointerDownHandler, IBeginDragHand
     public void OnDrag(PointerEventData notikums)
     {
         Debug.Log("Notike vilkšana!");
-        velkObjRectTrasf.anchoredPosition += notikums.delta / ObjektuSkripts.kanva.sclaeFactor;
+       // velkObjRectTrasf.anchoredPosition += notikums.delta / ObjektuSkripts.kanva.sclaeFactor;
     }
 }
