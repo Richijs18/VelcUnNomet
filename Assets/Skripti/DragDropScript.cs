@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragDropScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler /*, IEndDragHandler*/ {
-    //public Objekti ObjektuSkripts;
+public class DragDropScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler , IEndDragHandler {
+    public Objekti objektuSkripts;
     private CanvasGroup kanvasGrupa;
     private RectTransform velkObjRectTrasf;
 
@@ -35,6 +35,24 @@ public class DragDropScript : MonoBehaviour, IPointerDownHandler, IBeginDragHand
     public void OnDrag(PointerEventData notikums)
     {
         Debug.Log("Notike vilkšana!");
-       // velkObjRectTrasf.anchoredPosition += notikums.delta / ObjektuSkripts.kanva.sclaeFactor;
+      velkObjRectTrasf.anchoredPosition += notikums.delta / objektuSkripts.kanva.scaleFactor;
+    }
+    public void OnEndDrag(PointerEventData notikums)
+    {
+
+        objektuSkripts.pedejaisVilktais = notikums.pointerDrag;
+        Debug.Log("Pēdējais vilktias objekts: " + objektuSkripts.pedejaisVilktais);
+        Debug.Log("Beigta vilkšana!");
+        kanvasGrupa.alpha = 1f;
+        if (objektuSkripts.vaiIstajaVieta == false)
+        {
+            kanvasGrupa.blocksRaycasts = true;
+        }
+        else
+        {
+            objektuSkripts.pedejaisVilktais = null;
+        }
+        objektuSkripts.vaiIstajaVieta = false;
+
     }
 }
