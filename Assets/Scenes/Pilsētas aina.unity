@@ -215,8 +215,8 @@ RectTransform:
   - {fileID: 456676404}
   - {fileID: 568782992}
   - {fileID: 533958040}
-  - {fileID: 2081703864}
   - {fileID: 2092178150}
+  - {fileID: 2081703864}
   - {fileID: 1106852256}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -237,9 +237,10 @@ GameObject:
   - component: {fileID: 456676404}
   - component: {fileID: 456676406}
   - component: {fileID: 456676405}
+  - component: {fileID: 456676407}
   m_Layer: 5
   m_Name: AtkritumMashinaVieta
-  m_TagString: Untagged
+  m_TagString: Atkritumi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -300,6 +301,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456676403}
   m_CullTransparentMesh: 0
+--- !u!114 &456676407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456676403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46d5d4bbee6e774fbfdaa11f2551e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objektuSkripts: {fileID: 750719557}
 --- !u!1 &533958039
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,9 +325,10 @@ GameObject:
   - component: {fileID: 533958040}
   - component: {fileID: 533958042}
   - component: {fileID: 533958041}
+  - component: {fileID: 533958043}
   m_Layer: 5
   m_Name: Autobusa vieta
-  m_TagString: Untagged
+  m_TagString: Skola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -374,6 +389,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533958039}
   m_CullTransparentMesh: 0
+--- !u!114 &533958043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533958039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46d5d4bbee6e774fbfdaa11f2551e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objektuSkripts: {fileID: 750719557}
 --- !u!1 &568782991
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,9 +413,10 @@ GameObject:
   - component: {fileID: 568782992}
   - component: {fileID: 568782994}
   - component: {fileID: 568782993}
+  - component: {fileID: 568782995}
   m_Layer: 5
   m_Name: AtrasPalidzibas Vieta
-  m_TagString: Untagged
+  m_TagString: Atrie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -448,6 +477,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568782991}
   m_CullTransparentMesh: 0
+--- !u!114 &568782995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568782991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46d5d4bbee6e774fbfdaa11f2551e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objektuSkripts: {fileID: 750719557}
 --- !u!1 &750719556
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +629,7 @@ GameObject:
   - component: {fileID: 1106852260}
   m_Layer: 5
   m_Name: Autobuss
-  m_TagString: Untagged
+  m_TagString: Skola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -972,7 +1014,7 @@ GameObject:
   - component: {fileID: 2081703868}
   m_Layer: 5
   m_Name: AtraPalidziba
-  m_TagString: Untagged
+  m_TagString: Atrie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -989,7 +1031,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 271180820}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1073,7 +1115,7 @@ GameObject:
   - component: {fileID: 2092178154}
   m_Layer: 5
   m_Name: AtkritumuMashina
-  m_TagString: Untagged
+  m_TagString: Atkritumi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1090,7 +1132,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 271180820}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
