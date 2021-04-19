@@ -500,6 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 750719558}
   - component: {fileID: 750719557}
+  - component: {fileID: 750719559}
   m_Layer: 0
   m_Name: SkriptuParvaldnieks
   m_TagString: Untagged
@@ -526,7 +527,7 @@ MonoBehaviour:
   atroKoord: {x: 0, y: 0}
   bussKoord: {x: 0, y: 0}
   kanva: {fileID: 271180819}
-  skanasAvots: {fileID: 0}
+  skanasAvots: {fileID: 1283039340}
   skanaKoAtskanot:
   - {fileID: 8300000, guid: 8a8dc3947519b954bb1bba12f2503fd1, type: 3}
   - {fileID: 8300000, guid: dd9b071785bf27744b5a21a00f090c9c, type: 3}
@@ -548,6 +549,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &750719559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750719556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4782f7c4ba291438108bc1b136bb64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objektuSkripts: {fileID: 750719557}
 --- !u!1 &848643192
 GameObject:
   m_ObjectHideFlags: 0
