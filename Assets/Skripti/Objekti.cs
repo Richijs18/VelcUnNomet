@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Objekti : MonoBehaviour
 {
+    //Nosauc jaunos visus mainīgos
     public GameObject atkritumuMasina;
     public GameObject atroMasina;
     public GameObject autobuss;
@@ -15,7 +16,7 @@ public class Objekti : MonoBehaviour
     public GameObject Eskavators;
     public GameObject traktors1;
     public GameObject traktors5;
-
+    //Nosauc visas mainīgo koordinātes
     [HideInInspector]
     public Vector2 atkrKoord;
     [HideInInspector]
@@ -45,7 +46,7 @@ public class Objekti : MonoBehaviour
     [HideInInspector]
     public bool vaiIstajaVieta = false;
 
-
+    //Mainīgo atrašānās vietas
     private void Awake()
     {
         atkrKoord = atkritumuMasina.GetComponent<RectTransform>().localPosition;

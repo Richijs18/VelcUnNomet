@@ -7,7 +7,7 @@ public class WinScript : MonoBehaviour
     private int uzvarasPunkt;
     private int Punkti;
     public GameObject objektuSkripts;
-    // Start is called before the first frame update
+  
     void Start()
     {
         uzvarasPunkt = objektuSkripts.transform.childCount;

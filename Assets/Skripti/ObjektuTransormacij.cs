@@ -10,6 +10,7 @@ public class ObjektuTransormacij : MonoBehaviour
 
     void Update()
     {
+        //Uzspiežot z burtu griežas pulsteņrādītāj virzienā, Uzspiežot x burtu griežas pret pulksteņrādītāj virzienā.
         if (objektuSkripts.pedejaisVilktais != null)
         {
 
@@ -24,7 +25,7 @@ public class ObjektuTransormacij : MonoBehaviour
                 objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.Rotate(0, 0, -Time.deltaTime * 9f);
             }
 
-
+            //Uzspiežot kreiso pogu mašinas saraujas, Uzspiežot labo pogu mašinas paplašinās.
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 if (objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x > 0.35)
@@ -46,7 +47,7 @@ public class ObjektuTransormacij : MonoBehaviour
                 }
             }
 
-
+            //Uzspiežot pogu uz augšu mašīnas paliek augstākas, Uzspiežot pogu uz leju mašīnas paliek zemākas
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 if (objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x < 0.8)
