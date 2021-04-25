@@ -16,12 +16,13 @@ public class WinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Ja lietotājs saņem vairāk vai vienādus punktus, tad parādās uzvaras logs
         if(Punkti >= uzvarasPunkt)
         {
             transform.GetChild(0).gameObject.SetActive(true);
         }
     }
-
+    //Punkti skaitisies pēc katras mašīnas
     public void AddPoints()
     {
         Punkti++;
