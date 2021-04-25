@@ -52,11 +52,12 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler
                     notikums.pointerDrag.GetComponent<RectTransform>().localScale =
                        GetComponent<RectTransform>().localScale;
 
-
+                    GameObject.Find("UzvarasLogs").GetComponent<WinScript>().AddPoints();
                     /*Pārbauda pēc tagiem, kurš no objektiem ir pareizi nomests, tad 
                     atskaņo atbilstošo skaņu*/
                     switch (notikums.pointerDrag.tag)
                     {
+
                         case "Atkritumi":
                             objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[1]);
                             break;
